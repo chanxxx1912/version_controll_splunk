@@ -1,0 +1,11 @@
+sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","result_count","scan_count",status,"total_run_time","__mv_sid","__mv_search","__mv_splunk_server","__mv__time","__mv_is_realtime","__mv_event_count","__mv_exec_time","__mv_result_count","__mv_scan_count","__mv_status","__mv_total_run_time"
+"1682562601.3","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682562601.314339",0,0,1682562601,1,0,completed,"0.11900000000000001",,,,,,,,,,,
+"1682562601.4","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682562601.329245",0,0,1682562601,1,0,completed,"0.064",,,,,,,,,,,
+"1682562601.5","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682562601.406514",0,0,1682562601,1,0,completed,"0.167",,,,,,,,,,,
+"1682562601.6","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682562601.429243",0,0,1682562601,1,0,completed,"0.133",,,,,,,,,,,
+"1682562601.7","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682562601.506725",0,0,1682562601,1,0,completed,"0.07",,,,,,,,,,,
+"1682562601.8","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682562601.510039",0,0,1682562601,1,0,completed,"0.135",,,,,,,,,,,
+"1682562601.9","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682562601.651625",0,0,1682562601,1,0,completed,"0.057",,,,,,,,,,,
+"1682562601.10","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682562601.680133",0,0,1682562601,1,0,completed,"0.043000000000000003",,,,,,,,,,,
+"1682562601.11","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682562601.758358",0,0,1682562601,1,0,completed,"0.06",,,,,,,,,,,
+"1682562601.12","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682562601.771004",0,0,1682562601,1,0,completed,"0.056",,,,,,,,,,,

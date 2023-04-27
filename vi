@@ -1,0 +1,15 @@
+
+**/lookups/*
+
+!apps/search/lookups/my_important_lookup.csv
+
+etc/auth/
+etc/passwd
+*.pyc
+*.log
+users/**/history/*
+login-info.cfg
+local.meta
+ui-prefs.conf
+telemetry.conf
+
