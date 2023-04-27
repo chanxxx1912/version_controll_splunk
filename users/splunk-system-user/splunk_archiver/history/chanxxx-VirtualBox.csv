@@ -1,2 +1,3 @@
 sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","result_count","scan_count",status,"total_run_time","__mv_sid","__mv_search","__mv_splunk_server","__mv__time","__mv_is_realtime","__mv_event_count","__mv_exec_time","__mv_result_count","__mv_scan_count","__mv_status","__mv_total_run_time"
 "1682563621.7","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chanxxx-VirtualBox","1682563621.280908",0,0,1682563621,0,0,canceled,"0.32",,,,,,,,,,,
+"1682567220.7","| copybuckets json=""{\""vixes\"": {}, \""providers\"": {}}""","chanxxx-VirtualBox","1682567220.512502",0,0,1682567220,0,0,canceled,"0.278",,,,,,,,,,,

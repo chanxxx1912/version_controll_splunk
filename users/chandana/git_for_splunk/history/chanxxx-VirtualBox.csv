@@ -223,3 +223,56 @@ sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_
 |  top 20 changed_file 
 |  fields - percent
 | rename changed_file as ""Filename"" count as Count","chanxxx-VirtualBox","1682567145.127843",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567145.000000000",131,1682567145,0,search3,131,"1681959600.000000000","1682567145.000000000",completed,"0.302",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1682567230.9","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chanxxx-VirtualBox","1682567230.189880",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567230.000000000",134,1682567230,134,search1,134,"1681959600.000000000","1682567230.000000000",completed,"0.669",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1682567230.10","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chanxxx-VirtualBox","1682567230.238905",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567230.000000000",134,1682567230,0,search3,134,"1681959600.000000000","1682567230.000000000",completed,"0.585",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1682567295.11","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chanxxx-VirtualBox","1682567295.505220",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567295.000000000",135,1682567295,135,search1,135,"1681959600.000000000","1682567295.000000000",completed,"0.367",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1682567295.12","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chanxxx-VirtualBox","1682567295.520887",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567295.000000000",135,1682567295,0,search3,135,"1681959600.000000000","1682567295.000000000",completed,"0.368",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1682567302.13","search sourcetype=gitforsplunk index=_internal host=chanxxx-VirtualBox earliest=1682567290 latest=1682567291","chanxxx-VirtualBox","1682567302.936594",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567302.000000000",1,1682567302,1,search2,1,"1682567290.000000000","1682567291.000000000",canceled,"0.079",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1682567304.14","search sourcetype=gitforsplunk index=_internal host=chanxxx-VirtualBox earliest=1682567217 latest=1682567218","chanxxx-VirtualBox","1682567304.729920",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567304.000000000",1,1682567304,1,search2,1,"1682567217.000000000","1682567218.000000000",canceled,"0.081",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1682567305.15","search sourcetype=gitforsplunk index=_internal host=chanxxx-VirtualBox earliest=1682567157 latest=1682567158","chanxxx-VirtualBox","1682567305.549935",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567305.000000000",1,1682567305,1,search2,1,"1682567157.000000000","1682567158.000000000",canceled,"0.233",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1682567308.18","search sourcetype=gitforsplunk index=_internal host=chanxxx-VirtualBox earliest=1682567290 latest=1682567291","chanxxx-VirtualBox","1682567308.488672",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567308.000000000",1,1682567308,1,search2,1,"1682567290.000000000","1682567291.000000000",completed,"0.091",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search1_1682567991.3","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","chanxxx-VirtualBox","1682567991.746536",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567991.000000000",157,1682567991,157,search1,157,"1681959600.000000000","1682567991.000000000",completed,"0.304",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search3_1682567991.4","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","chanxxx-VirtualBox","1682567991.757012",0,"UI:Dashboard:status","1681959600.000000000",0,0,"1682567991.000000000",157,1682567991,0,search3,157,"1681959600.000000000","1682567991.000000000",completed,"0.375",,,,,,,,,,,,,,,,,,,
+"chandana__chandana_Z2l0X2Zvcl9zcGx1bms__search2_1682568000.5","search sourcetype=gitforsplunk index=_internal host=chanxxx-VirtualBox earliest=1682567969 latest=1682567970","chanxxx-VirtualBox","1682568000.476535",0,"UI:Dashboard:status","1681963200.000000000",0,0,"1682568000.000000000",1,1682568000,1,search2,1,"1682567969.000000000","1682567970.000000000",completed,"0.19",,,,,,,,,,,,,,,,,,,

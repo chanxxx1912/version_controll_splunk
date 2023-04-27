@@ -5,4 +5,9 @@ modtime = 1682562301.148999000
 [inputs/gitforsplunk%3A%2F%2Fgitversion]
 owner = chandana
 version = 9.0.4.1
-modtime = 1682563188.424727000
+modtime = 1682567245.053600000
+
+[inputs/gitforsplunk%3A%2F%2Fvaladataion]
+owner = chandana
+version = 9.0.4.1
+modtime = 1682567289.052696000
