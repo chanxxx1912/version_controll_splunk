@@ -1,0 +1,14 @@
+**/lookups/*
+!apps/search/lookups/my_important_lookup.csv
+If you don't want to store sensitive information to be sent to an external repo, you probably want to ignore these sorts of files (and others).
+etc/auth/
+etc/passwd
+Other things you will probably want to ignore just because they are low value or change regularly.
+*.pyc
+*.log
+users/**/history/*
+login-info.cfg
+local.meta
+ui-prefs.conf
+telemetry.conf
+
