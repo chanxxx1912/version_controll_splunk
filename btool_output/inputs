@@ -68,19 +68,6 @@
 /opt/splunk/etc/system/default/inputs.conf                             recurse = true
 /opt/splunk/etc/system/default/inputs.conf                             sendEventMaxSize = -1
 /opt/splunk/etc/system/default/inputs.conf                             signedaudit = true
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  [gitforsplunk://gitversion]
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  disabled = 1
-host = $decideOnStartup
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  include_btool_output = true
-/opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                index = _internal
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  interval = 30
-/opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                python.version = python3
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  remote_push = true
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  repository_directory = .git/
-/opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                sourcetype = gitforsplunk
-/opt/splunk/etc/apps/git_for_splunk/default/inputs.conf                start_by_shell = false
-/opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  working_directory = etc/
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  [gitforsplunk://valadataion]
 /opt/splunk/etc/apps/git_for_splunk/local/inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros
 host = $decideOnStartup
