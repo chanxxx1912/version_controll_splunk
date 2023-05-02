@@ -89,3 +89,7 @@ sid,search,"splunk_server","_time","is_realtime","event_count","exec_time","resu
 "1682929806.52","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682929806.441698",0,0,1682929806,1,0,completed,"0.041",,,,,,,,,,,
 "1682929806.53","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682929806.511430",0,0,1682929806,1,0,completed,"0.076",,,,,,,,,,,
 "1682929806.54","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682929806.556208",0,0,1682929806,1,0,completed,"0.049",,,,,,,,,,,
+"1682991000.6","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682991000.832658",0,0,1682991000,1,0,completed,"0.046",,,,,,,,,,,
+"1682991000.7","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682991000.946221",0,0,1682991000,1,0,completed,"0.016",,,,,,,,,,,
+"1682991001.9","| rest splunk_server=local services/server/info","chanxxx-VirtualBox","1682991001.042059",0,0,1682991001,1,0,completed,"0.053",,,,,,,,,,,
+"1682991001.10","| rest services/server/info | sort splunk_server","chanxxx-VirtualBox","1682991001.158368",0,0,1682991001,1,0,completed,"0.015",,,,,,,,,,,
